@@ -30,7 +30,7 @@ public class ShopperStackRegistrationImpl {
 	@Before
 	public void launchApplication() {
 		webDriver=new ChromeDriver();
-		webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		webDriver.manage().window().maximize();
 		homePage=new HomePage(webDriver);
 		shopperLoginPage=new ShopperLoginPage(webDriver);

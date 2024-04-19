@@ -21,6 +21,10 @@ public class HomePage {
 	
 	@FindBy(xpath = "//div[text()='Successfully Registered']")
 	private WebElement successToasterMessage;
+	
+	@FindBy(xpath = "//a[text()='Home']")
+	private WebElement homeLink;
+
 
 	public WebElement getWelcomeMessage() {
 		return welcomeMessage;
@@ -34,6 +38,8 @@ public class HomePage {
 		return successToasterMessage;
 	}
 	
-	
+	public WebElement getHomeLink() {
+		return homeLink;
+	}
 	
 }
