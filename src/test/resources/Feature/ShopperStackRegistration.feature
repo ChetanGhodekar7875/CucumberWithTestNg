@@ -8,8 +8,8 @@ Feature: Check Whether the user is able to Register
       | Fname        | Anna                  |
       | Lname        | Yadav                 |
       | Gender       | Male                  |
-      | PhoneNumber  |            7949405236 |
-      | EmailAddress | topzanzZxYadav@gmail.com |
+      | PhoneNumber  |            7949405200 |
+      | EmailAddress | topzanzSZxYadav@gmail.com |
       | Password     | Anna@8888             |
     Then Success Toaster Message should be displayed
 
@@ -17,6 +17,6 @@ Feature: Check Whether the user is able to Register
   Scenario: Registration Of end user
     Given Check Whether the user is able login with valid data
     When user click on login button
-      | EmailAddress | topzanzZxYadav@gmail.com |
+      | EmailAddress | topzanzSZxYadav@gmail.com |
       | Password     | Anna@8888             |
     Then Home page Should display
